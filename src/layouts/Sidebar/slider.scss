@@ -1,0 +1,62 @@
+#sidebar{
+  position: absolute;
+  top: 52px;
+  left: 0;
+  bottom: 0;
+  background: #373f52;
+  overflow-y: auto;
+  .sideContainer{
+      .smenu{
+          color:#fff;
+          font-size:14px;
+          width:200px;
+          background-color: #373f52;
+          cursor: pointer;
+          .grp{
+              width:200px;
+              background-color: #373f52;
+              & > div{
+                  color: #fff;
+                  padding: 12px 20px;
+                  display: block;
+                  position:relative;
+                  background:url('../../assets/images/down.png') no-repeat 90% center;
+                  &+ul{
+                    display: none;
+                    background-color:#313846;
+                    li{
+                      cursor: pointer;                   
+                      display: block;
+                      text-indent: 8px;
+                    }
+                  }
+                  &.active{
+                    background:url('../../assets/images/up.png') no-repeat 90% center;
+                    color: #03cda8;
+                    border-left:4px solid #03cda8;
+                    background-color:#313846;
+                    &+ul{
+                      display: block !important; 
+                    }
+                  }
+              }
+          }
+          a{
+            cursor: pointer;    
+            color:#FFF;
+            display: block;
+            padding: 12px 20px;
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            text-decoration: none;
+            &:hover,&.active{
+              box-sizing: border-box;
+              background-color: #292f3c;                  
+            }
+
+          }
+      }
+  }
+}
+

@@ -1,0 +1,135 @@
+.ver{
+	font-size:14px;
+	.top{
+	  	padding: 16px 25px;
+	 	min-height: 70px;
+	 	vertical-align: middle;
+	 	.verw{
+	 		display: inline-block;
+	 	}
+	 	.vera h4{
+	 		border-left:2px solid #88B7E0;
+	 		padding-left: 10px;
+	 	}
+	 	.verb{
+	 		float: right;
+	 	}
+	}
+	.mid{
+		padding: 0px 25px;
+		.row1 li{
+			padding: 8px 14px;
+			display: inline-block;
+		    border-top: 1px solid #ddd;
+		    border-left: 1px solid #ddd;
+		    border-bottom: 1px solid #ddd;
+		    background-color: #FBFAF8;
+		    cursor: pointer;
+		}
+		.row1 li:last-child{
+			border-right: 1px solid #ddd;
+		}
+		.row1 li:hover{
+		    background-color: #FFF;
+    		color: #09C;
+		}
+		.row1 .active{
+		    border-top: 2px solid #00a2ca;
+		    border-right: 0px;
+		    border-bottom: 1px solid #FFF;
+		    color: #333;
+		    background-color: #FFF;
+		}
+		.row2{
+			padding:15px 14px;
+			border-left: 1px solid #ddd;
+			border-right: 1px solid #ddd;
+			.r1{
+				display: inline-block;
+			}
+			.r2{
+				display: inline-block;
+			}
+			.r3{
+				float:right;
+				display: inline-block;
+				line-height: 28px;
+				margin-right: 5px;
+			}
+			.r4{
+				float:right;
+				display: inline-block;
+
+			}
+		}
+		.row3{
+			width: 100%;
+			height: 400px;
+			padding:15px 14px;
+			border-left: 1px solid #ddd;
+			border-right: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+	}
+	.bottom{
+		padding: 0px 25px;
+		margin-top: 30px;
+		width: 100%;
+		.row1{
+		    background: #F5F6FA;
+		    width: 100%;
+		    height: 40px;
+		    border: 1px solid #ddd;
+		    position: relative;
+		    .l1{	
+	    	    height: 100%;
+			    display: inline-block;
+			    line-height: 39px;
+			    vertical-align: top;
+			    font-size: 16px;
+			    margin-left: 14px;
+		    }
+		    .l2{
+		    	vertical-align: top;
+		    	cursor: text;
+			    color: #555 !important;
+		        height: 32px;
+			    border-radius: 0px;
+			    padding: 6px;
+			    -webkit-transition: none;
+			    transition: none;
+			    font-size: 12px;
+		        display: inline-block;
+		        float: right;
+		    }
+		    .l3{
+		    	vertical-align: top;
+		    	padding: 6px;
+		    	display: inline-block;
+		    	float: right;
+		    }
+		}
+		.row1:before{
+		    content: '';
+		    display: inline-block;
+		    width: 4px;
+		    background-color: #6D7781;
+		    height: 100%;
+		}
+		.row2{
+			clear: both;
+				.bb{
+					border:1px solid #ddd;
+					border-bottom: none;
+					border-top: none;
+				}
+				.tableFooter {
+				height: 40px;
+				background-color: #F9F9FB;
+	    		border: 1px solid #ddd;
+	    		border-top: none;
+			}
+		}
+
+	}
+}

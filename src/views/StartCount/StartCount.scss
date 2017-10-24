@@ -1,0 +1,79 @@
+.startCount {
+  margin: 0 25px;
+
+  .trend-img,
+  .count-img {
+    .img-nav {
+      overflow: hidden;
+
+      a {
+        display: block;
+        width: 12%;
+        height: 38px;
+        float: left;
+        border: 1px solid #ddd;
+        border-right: 0;
+        line-height: 38px;
+        text-align: center;
+        color: #333;
+        background-color: #fbfaf8;
+      }
+      a.last {
+        border-right: 1px solid #ddd;
+      }
+      a.active {
+        background-color: #fff;
+        border-bottom: 0;
+        border-top: 2px solid #88B7E0;
+      }
+    }
+    .line {
+      margin-top: -1px;
+      border-bottom: 1px solid #ddd;
+    }
+    .img-content {
+      border: 1px solid #ddd;
+      border-top: 0;
+      margin-bottom: 20px;
+
+      h4 {
+        padding-top: 20px;
+        text-indent: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .datas {
+    .data-header {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f5f6fa;
+      vertical-align: middle;
+      margin-top: 15px;
+    }
+  }
+
+  .count-img {
+    margin-top: 20px;
+    
+    div {
+      overflow: hidden;
+      padding-top: 20px;
+      
+      h4 {
+        float: left;
+        padding-top: 0!important;
+      }
+
+      p {
+        float: right;
+        padding-top: 5px;
+        padding-right: 10px;
+      }
+    }
+    div.line {
+      padding: 0!important;
+    }
+  }
+}

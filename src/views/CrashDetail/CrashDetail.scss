@@ -1,0 +1,76 @@
+.crashDetail {
+  .header {
+    padding: 16px 25px;
+    min-height: 70px;
+
+    h3 {
+      display: inline-block;
+      text-indent: 8px;
+      border-left: 2px solid #88B7E0;
+      font-weight: 400;
+    }
+  }
+
+  .crash-table {
+    margin: 0 25px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f5f6fa;
+    vertical-align: middle;
+
+    h4 {
+      line-height: 40px;
+      border-left: 4px solid #6d7781;
+      text-indent: 14px;
+      font-size: 14px;
+      font-weight: 400;
+      display: inline-block;
+    }
+  }
+}
+
+#crash-table {
+  .table-header {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;;
+  }
+
+  section {
+    display: flex;
+    //border: 1px solid #ccc;
+    border-top: 0;
+
+    div {
+      flex: auto;
+      height: 35px;
+      line-height: 35px;
+      color: #999;
+
+      p {
+        font-size: 12px;
+        position: absolute;
+        padding-left: 8px;
+        padding-right: 30px;
+        background: url("../../assets/images/crash-full-arrow.png") 98% center no-repeat;
+        cursor: pointer;
+      }
+    }
+    div.long {
+      flex-grow: 6;
+    }
+  }
+  section.table-header {
+    background-color: #f5f6fa;
+  }
+  section.no-find {
+    height: 42px;
+    line-height: 42px;
+    background-color: #fff;
+
+    P {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}

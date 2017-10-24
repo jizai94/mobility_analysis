@@ -1,0 +1,115 @@
+@mixin padding {
+	position: relative;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+@mixin h5 {
+	display: inline-block;
+	text-indent: 8px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.channelManage {
+	@include padding;
+	.row1 {
+		padding: 22px 0;
+		div {
+			.title {
+				@include h5;
+				border-left: 2px solid #88B7E0;
+				margin-right: 16px;
+			}
+		}
+		button {
+			float: right;
+		}
+	}
+	.row2 {
+		margin-bottom: 25px;
+		.tableContent {
+			margin-top: 20px;
+			border: 1px solid #ddd;
+		}
+	}
+	.tb{
+		color:#00a2ca;
+		margin-top: 20px;
+		table{
+			width: 100%;
+			height: 40px;
+			border:1px solid #ddd;
+			border-bottom:none;
+			border-collapse:collapse;
+			tbody{
+			    background-color: #fff;
+			    width: 100%;
+			    height: 40px;
+			    tr{	   		
+		    		td{
+						padding:10px 8px;
+						width: 25%;
+						border-bottom:1px solid #ddd;
+						font-size: 12px;
+						text-align: center;
+						span{
+							cursor: pointer;
+							padding: 0 10px;
+							border-right:1px solid #00a2ca;
+							font-size: 12px;
+							color: #06c;
+							a {
+								color: #06c;
+							}
+							&:hover {
+								color: #039;
+								text-decoration: underline;
+							}
+						}
+						span:last-child{
+							border-right:none;
+						}
+					}
+			    }
+			}
+		}
+	}
+}
+
+.ant-modal-body {
+	.list {
+		margin-bottom: 15px;
+		.title {
+			display: inline-block;
+			width: 22%;
+			text-align: right;
+			padding-right: 10px;
+		}
+		input {
+			width: 70%;
+		}
+		textarea {
+			width: 70%;
+		}
+	}
+}
+
+.delete {
+	.ant-modal-body{
+		.deleteImg {
+			font-size: 32px;
+			color: #f90;
+			margin-left: 15px;
+		}
+		.deletePoint {
+			display: inline-block;
+			margin-left: 15px;
+			padding: 10px 0;
+			font-size: 12px;
+			color: #333;
+			.blod {
+				font-weight: bold;
+			}
+		}
+	}
+}

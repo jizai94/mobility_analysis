@@ -1,0 +1,132 @@
+$mainBlue: #09c;
+$fontGray: #999;
+$border: #ccc;
+$tableColor: #f5f6fa;
+
+.crashTrend {
+  margin: 0 25px;
+
+  .header {
+    padding: 16px 0;
+    min-height: 70px;
+    overflow: hidden;
+
+    h3 {
+      text-indent: 8px;
+      border-left: 2px solid #88B7E0;
+      font-weight: 400;
+      font-size: 14px;
+      float: left;
+      margin-right: 10px;
+    }
+  }
+
+  .crashTrend-img {
+    .img-nav {
+      overflow: hidden;
+
+      a {
+        display: block;
+        width: 12%;
+        height: 38px;
+        float: left;
+        border: 1px solid #ddd;
+        border-right: 0;
+        line-height: 38px;
+        text-align: center;
+        color: #333;
+        background-color: #fbfaf8;
+      }
+      a.last {
+        border-right: 1px solid #ddd;
+      }
+      a.active {
+        background-color: #fff;
+        border-bottom: 0;
+        border-top: 2px solid #88B7E0;
+        z-index: 10;
+      }
+    }
+    .line {
+      margin-top: -1px;
+      border-bottom: 1px solid #ddd;
+    }
+    .img-content {
+      border: 1px solid #ddd;
+      border-top: 0;
+      padding-top: 15px;
+      margin-bottom: 20px;
+
+      h4 {
+        padding-top: 15px;
+        text-indent: 20px;
+        font-weight: 400;
+      }
+      .crashTrend-table-header {
+        border: 0;
+        border-top: 1px solid #ccc;
+      }
+
+    }
+  }
+
+  .crashTrend-table-header {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f5f6fa;
+    vertical-align: middle;
+    margin-top: 15px;
+
+    h5, h6 {
+      line-height: 40px;
+      font-size: 12px;
+      font-weight: 400;
+      display: inline-block;
+      margin-right: 25px;
+      border-left: 4px solid #6d7781;
+      text-indent: 14px;
+    }
+    h6 {
+      float: right;
+      border: 0;
+      text-indent: 0;
+    }
+  }
+}
+
+#crashTrend-table {
+  padding-bottom: 35px;
+  border: 1px solid $border;
+  border-top: 0;
+  background-color: $tableColor;
+
+  section {
+    display: flex;
+    border-bottom: 1px solid $border;
+    background-color: #fff;
+
+    div {
+      flex: auto;
+      height: 35px;
+      line-height: 35px;
+      color: #333;
+
+      p {
+        font-size: 12px;
+        position: absolute;
+        padding-left: 8px;
+        padding-right: 30px;
+      }
+    }
+
+  }
+  section.table-header {
+    background-color: $tableColor;
+
+    div {
+      color: $fontGray;
+    }
+  }
+}
+
+

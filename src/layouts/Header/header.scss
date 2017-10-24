@@ -1,0 +1,76 @@
+header {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 52px;
+  line-height: 52px;
+  border-bottom: 1px solid #d9d9d9;
+  width: 100%;
+  background: #fff;
+
+  .back {
+    position: absolute;
+    right: 25px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 52px;
+    display: block;
+    float: left;
+    background-color: #373f52;
+    color: #fff;
+    font-size: 12pt;
+    text-align: center;
+    line-height: 52px;
+    span{
+      display: inline-block;
+      position: relative;
+      width:43px;
+      height:23px;
+      background: url(../../assets/images/logo1.png) no-repeat;
+      top: 6px;
+      right: 5px;
+    }
+  }
+
+  .device-type {
+    height: 52px;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: #fff;
+    float: left;
+
+    h3 {
+      padding-left: 65px;
+      margin-right: 45px;
+      background: url("../../assets/images/device-icon.png") 12px center no-repeat;
+      line-height: 52px;
+      float: left;
+    }
+
+    ul {
+      float: left;
+
+      li {
+        float: left;
+        margin-right: 30px;
+
+        a {
+          display: block;
+          line-height: 52px;
+          padding: 0 17px;
+          color: #000;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #108ee9;
+        }
+      }
+      li.active {
+        height: 52px;
+        background-color: #f8f8f8;
+        border-bottom: 2px solid #03cda8;
+      }
+    }
+  }
+}
