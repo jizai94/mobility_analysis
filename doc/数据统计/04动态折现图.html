@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.5.3/echarts.min.js"></script>
+</head>
+<body>
+<div id="main" style="width: 1193px; height: 400px;"></div>
+
+<script>
+    var myChart = echarts.init(document.getElementById('main'));
+
+    option = {
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'line'
+            }
+
+        },
+        xAxis : [
+            {
+                type : 'category',
+                axisTick: {
+                    // 刻度与标签对齐
+                    alignWithLabel: true
+                    // 隔1个显示1个标签
+                },
+                axisLabel: {
+                    interval: 1,
+                    textStyle: {
+                        color: '#000'
+                    }
+                },
+                axisLine: {
+                    // 轴线是否在另一个轴的0刻度上
+                    onZero: false,
+                    lineStyle: {
+                        color: '#000'
+                    }
+                },
+                boundaryGap : true,
+                data : ['00:00', '01:00', '02:00', '03:00', '04:00', '05:00', '06:00', '07:00', '08:00', '08:00', '08:00', '08:00', '08:00', '08:00', '08:00', '08:00', '08:00']
+            }
+        ],
+        yAxis : {
+            type: 'value',
+                axisTick: {
+                // 刻度与标签对齐
+                alignWithLabel: true
+            },
+            axisLabel: {
+                formatter: '{value}%'
+            },
+            splitLine: {
+                lineStyle: {
+                    type: 'dotted'
+                }
+            },
+            axisLine: {
+                show: false,
+                onZero: false
+            },
+            axisTick: {
+                show: false
+            },
+            min: 0,
+            max: 0.25
+        },
+        series: [{
+            type: 'line',
+            smooth: true,
+            symbol: 'circle',
+            symbolSize: 8,
+            showAllSymbol: true,
+            zlevel: 10,
+            areaStyle: {
+                normal: {
+                    color: '#f40'
+                }
+            },
+            data: [0.19, 0.17, 0.10, 0.24, 0.18, 0.16, 0.19, 0.18]
+        },
+            {
+                type: 'line',
+                smooth: true,
+                symbol: 'circle',
+                symbolSize: 8,
+                showAllSymbol: true,
+                areaStyle: {
+                    normal: {
+                        color: '#ccc'
+                    }
+                },
+                data: [0.15, 0.19, 0.17, 0.10, 0.24, 0.18, 0.16, 0.19, 0.18, 0.15, 0.19, 0.17, 0.10, 0.24, 0.13, 0.18, 0.16 ]
+
+            }
+        ]
+
+    };
+
+    myChart.setOption(option);
+
+    var arr = {
+        a: [0.19, 0.17, 0.10, 0.24, 0.18, 0.16, 0.19, 0.17],
+        b: [0.19, 0.17, 0.10, 0.24, 0.18, 0.16, 0.19, 0.21],
+        c: [0.19, 0.17, 0.10, 0.24, 0.18, 0.16, 0.19, 0.15]
+    };
+    var i = 0;
+
+    setInterval(function () {
+//        console.log(0);
+
+        switch (i) {
+            case 0:
+                myChart.setOption({
+                    series: [
+                        {
+                            data: arr.a
+                        }
+                    ]
+                });
+                i+=1;
+//                console.log(1);
+                break;
+            case 1:
+                myChart.setOption({
+                    series: [
+                        {
+                            data: arr.b
+                        }
+                    ]
+                });
+                i+=1;
+                break;
+            case 2:
+                myChart.setOption({
+                    series: [
+                        {
+                            data: arr.c
+                        }
+                    ]
+                });
+                i = 0;
+                break;
+        }
+    }, 2000);
+
+</script>
+</body>
+</html>
